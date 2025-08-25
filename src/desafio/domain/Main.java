@@ -8,9 +8,9 @@ public class Main {
         Curso curso1 = new Curso();
         Curso curso2 = new Curso();
 
-        curso2.setTitulo("curso de java avancado");
-        curso2.setDescricao("descricao curso java");
-        curso2.setCargaHoraria(4);
+        curso1.setTitulo("curso de java avancado");
+        curso1.setDescricao("descricao curso java");
+        curso1.setCargaHoraria(8);
 
         curso2.setTitulo("curso de springboot");
         curso2.setDescricao("descricao curso springboot");
@@ -31,9 +31,20 @@ public class Main {
 
         Dev Thiago = new Dev();
         Thiago.setNome("thiago porto");
+        Thiago.inscreverBootcamp(bootcamp);
+        Thiago.progredir();
+        Thiago.progredir();
+        Thiago.progredir();
+        System.out.println(Thiago.getNome()+ " esta iscrito nesse conteudo: " + Thiago.getConteudosInscritos());
+        System.out.println(Thiago.getConteudosConcluidos());
+        System.out.println("thiago xp: "+Thiago.calcularXp());
 
         Dev Bruno = new Dev();
         Bruno.setNome("bruno porto");
+        Bruno.inscreverBootcamp(bootcamp);
+        Bruno.progredir();
+        Bruno.progredir();
+        System.out.println("bruno xp: "+Bruno.calcularXp());
 
 
     }

@@ -3,6 +3,7 @@ package desafio.domain;
 import java.time.LocalDate;
 
 public class Mentoria extends Conteudo{
+
     private LocalDate data;
 
     public LocalDate getData() {
@@ -18,5 +19,14 @@ public class Mentoria extends Conteudo{
 
         return XP_PADRAO + 20d;
 
+    }
+
+    @Override
+    public String toString() {
+        return "Mentoria{" +
+                "data=" + data +
+                ", descricao='" + descricao + '\'' +
+                ", titulo='" + titulo + '\'' +
+                '}';
     }
 }
